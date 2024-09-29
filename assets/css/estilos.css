@@ -1,3 +1,4 @@
+/* Estilos globales */
 *{
     margin: 0;
     padding: 0;
@@ -36,7 +37,6 @@ main{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(0, 128, 255, 0.5);
-
 }
 
 .caja__trasera div{
@@ -44,7 +44,6 @@ main{
     color: white;
     transition: all 500ms;
 }
-
 
 .caja__trasera div p,
 .caja__trasera button{
@@ -130,9 +129,54 @@ main{
     outline: none;
 }
 
+/* Estilos para Fecha de Nacimiento */
+.fecha-nacimiento {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 
+.fecha-nacimiento select {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
 
+.fecha-nacimiento select:focus {
+    background-color: #EAEAEA;
+}
 
+/* Estilos para Género */
+.sexo {
+    margin-top: 20px;
+    color: #333;
+}
+
+.sexo label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.sexo input[type="radio"] {
+    margin-right: 5px;
+}
+
+.sexo input[type="radio"]:focus {
+    outline: 2px solid #46A2FD;
+}
+
+/* Transiciones al hacer hover en los radios */
+.sexo label:hover {
+    color: #46A2FD;
+    transition: color 200ms ease-in-out;
+}
+
+/* Visibilidad del formulario */
 .formulario__login{
     opacity: 1;
     display: block;
@@ -141,8 +185,7 @@ main{
     display: none;
 }
 
-
-
+/* Responsive */
 @media screen and (max-width: 850px){
 
     main{
@@ -161,9 +204,6 @@ main{
         position: absolute;
     }
 
-
-    /*Formularios*/
-
     .contenedor__login-register{
         top: -10px;
         left: -5px;
@@ -174,3 +214,4 @@ main{
         position: relative;
     }
 }
+

@@ -1,0 +1,66 @@
+/* estilos_bienvenida.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.welcome {
+    flex: 1;
+    padding: 20px;
+}
+
+.welcome h2 {
+    color: #2196F3;
+}
+
+.welcome-actions {
+    margin-top: 20px;
+}
+
+.welcome-actions .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.posts {
+    margin: 20px;
+}
